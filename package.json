@@ -4,13 +4,14 @@
   "description": "Test pipeline DevOps",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --reporter mocha-sonarqube-reporter test --reporter-options output=xunit.xml",
     "start": "node app.js"
   },
   "author": "Pedro Davi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mocha-sonarqube-reporter": "^1.0.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",

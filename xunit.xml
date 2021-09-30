@@ -1,0 +1,5 @@
+<testExecutions version="1">
+<file path="test\test-pages.js">
+<testCase name="Main page: content" duration="25"/>
+</file>
+</testExecutions>
